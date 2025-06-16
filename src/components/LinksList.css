@@ -1,0 +1,22 @@
+.links-section {
+  margin: 40px 0;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.links-list a:hover {
+  color: #007bff;
+}
