@@ -1,0 +1,112 @@
+.about-container {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 400;
+  padding: 3rem;
+}
+
+.content-container-right {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+
+  p {
+    text-align: start;
+  }
+}
+
+.content-container-left {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 2rem;
+
+  p {
+    text-align: start;
+  }
+}
+
+.text-box {
+  width: 60%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.image-overlay {
+  position: absolute;
+  top: 44%;
+  left: 22%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background-color: #fff;
+  padding: clamp(10px, 2vw, 20px) clamp(40px, 8vw, 80px);
+  border-radius: 50%;
+  color: #be1e2d;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 600;
+  animation: rotate 1s linear;
+  white-space: nowrap;
+  min-width: max-content;
+  aspect-ratio: 2.5/1;
+
+  h3 {
+    color: #be1e2d;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 3rem;
+  }
+}
+
+.image-overlay h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.image-overlay p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.contact-button {
+  background-color: #be1e2d;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.contact-button:hover {
+  background-color: #0000af;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  color: #d7ff35;
+}
+
+.contact-button:active {
+  transform: translateY(-1px);
+}
