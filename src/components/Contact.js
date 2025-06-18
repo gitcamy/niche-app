@@ -3,9 +3,11 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <>
+    <div className="contact-page">
       <div className="contact-container">
-        <p>An independent creative services studio fit to your niche.</p>
+        <p>
+          An independent creative + technical service studio fit to your niche.
+        </p>
         <img src="/niche_logo.png" alt="Niche Logo" className="contact-image" />
       </div>
       <div className="contact-content">
@@ -14,7 +16,7 @@ const Contact = () => {
           cameron@cosashermosas.shop
         </a>
       </div>
-    </>
+    </div>
   );
 };
 

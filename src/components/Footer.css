@@ -1,0 +1,38 @@
+.footer {
+  background-color: #be1e2d;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer-content {
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer-content a:hover {
+  color: #d7ff35;
+}
+.footer-logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+.footer-bottom {
+  text-align: center;
+}
