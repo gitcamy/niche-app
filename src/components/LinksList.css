@@ -30,6 +30,8 @@
   color: #000;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   transition: opacity 0.3s ease;
 }
@@ -44,6 +46,9 @@
   font-size: clamp(1.2rem, 3vw, 2.5rem);
   color: #000;
   font-weight: 450;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,15 +61,17 @@
 
   .list-description {
     flex: 1;
+    min-width: 0;
   }
 
   .list-name {
-    flex: 1;
+    flex: 0 1 auto;
     text-align: center;
+    margin: 0 20px;
   }
 
   .list-date {
-    flex: 0 0 100px;
+    flex: 0 0 auto;
     text-align: right;
   }
 }

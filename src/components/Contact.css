@@ -67,10 +67,21 @@
   .contact-container {
     flex-direction: row;
     text-align: left;
+    width: 100%;
+    padding: 2rem;
+    max-width: fit-content;
+    margin: 0%;
   }
 
   .contact-content {
     flex-direction: row;
     text-align: left;
+    max-width: fit-content;
+    margin: 0%;
+    padding: 2rem;
+  }
+
+  .contact-page {
+    display: block;
   }
 }

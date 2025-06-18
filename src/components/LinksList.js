@@ -17,7 +17,7 @@ const LinksList = () => {
     },
     {
       name: "Cosas Hermosas",
-      description: "Lead Creative Design, Web development",
+      description: "Lead Creative Design, Web Development",
       date: "2022",
       link: "https://www.cosashermosas.shop",
     },
