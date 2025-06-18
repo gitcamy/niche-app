@@ -8,18 +8,10 @@
 .content-container-right,
 .content-container-left {
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
-}
-
-.content-container-right p,
-.content-container-left p {
-  text-align: center;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .text-box {
@@ -33,6 +25,16 @@
   overflow: hidden;
 }
 
+.button-box {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .service-image {
   width: 100%;
   height: auto;
@@ -41,8 +43,8 @@
 
 .image-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 42%;
+  left: 22%;
   transform: translate(-50%, -50%) rotate(-10deg);
   background-color: #fff;
   padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 80px);
@@ -86,7 +88,6 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 2rem;
   width: 100%;
   max-width: 300px;
 }
@@ -111,18 +112,43 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .image-overlay {
+    padding: clamp(5px, 1vw, 10px) clamp(10px, 2vw, 40px);
+    font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+  }
+
+  .image-overlay h3 {
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .content-container-right,
-  .content-container-left {
+  .content-container-right {
     align-items: flex-start;
   }
 
-  .content-container-right p,
+  .content-container-left {
+    align-items: flex-end;
+  }
+
   .content-container-left p {
     text-align: left;
   }
 
+  .content-container-right p {
+    text-align: start;
+  }
+
   .contact-button {
-    width: auto;
+    width: 30%;
+  }
+
+  .text-box {
+    width: 60%;
+  }
+
+  .button-box {
+    justify-content: end;
   }
 }

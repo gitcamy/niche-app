@@ -57,10 +57,12 @@ const About = () => {
               idea into a reality.{" "}
             </p>
           </div>
-          <button className="contact-button" onClick={handleContactClick}>
-            Work with us!
-          </button>
         </div>
+      </div>
+      <div className="button-box">
+        <button className="contact-button" onClick={handleContactClick}>
+          Work with us!
+        </button>
       </div>
     </>
   );
