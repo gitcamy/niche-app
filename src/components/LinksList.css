@@ -1,6 +1,7 @@
 .links-section {
   margin: 40px 0;
-  padding: 0 20px;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -14,7 +15,7 @@
 
 .list-item {
   opacity: 0.5;
-  padding: 20px 0;
+  padding: clamp(1rem, 3vw, 20px) 0;
   display: flex;
   align-items: center;
 }
@@ -28,20 +29,42 @@
   width: 100%;
   color: #000;
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  gap: 0.5rem;
   transition: opacity 0.3s ease;
 }
 
 .list-link:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .list-description,
 .list-name,
 .list-date {
-  font-size: 2.5rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   color: #000;
-  white-space: nowrap;
   font-weight: 450;
+}
+
+@media screen and (min-width: 768px) {
+  .list-link {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .list-description {
+    flex: 1;
+  }
+
+  .list-name {
+    flex: 1;
+    text-align: center;
+  }
+
+  .list-date {
+    flex: 0 0 100px;
+    text-align: right;
+  }
 }
