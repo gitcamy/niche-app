@@ -1,0 +1,58 @@
+.photo-album {
+  padding: 2rem 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(229, 227, 223);
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Apple";
+  src: url("../assets/fonts/AppleGaramond-Light.ttf") format("truetype");
+}
+
+.photo-album h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Apple", "Times New Roman", Times, serif;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.photo-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.photo-album {
+  /* ...existing styles... */
+  cursor: url("../assets/cursors/nicheLogo.png"), auto;
+}
