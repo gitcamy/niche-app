@@ -14,8 +14,8 @@
 .photo-album h1 {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 6rem;
+  font-weight: 500;
   font-family: "Apple", "Times New Roman", Times, serif;
 }
 
@@ -35,9 +35,9 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: #000;
-  color: #fff;
-  border: none;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
   border-radius: 50px;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;

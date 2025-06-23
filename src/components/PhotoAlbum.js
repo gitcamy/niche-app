@@ -46,7 +46,7 @@ const PhotoAlbum = () => {
           onClick={scrollToTop}
           aria-label="Back to top"
         >
-          ↑ Top
+          Back to top ↑
         </button>
       )}
     </div>

@@ -22,7 +22,7 @@ function App() {
         <Route path="/photos-standalone" element={<PhotoAlbumStandalone />} />
         {/* Add other routes here as needed */}
       </Routes>
-      {!isStandalone && <Footer />}
+      <Footer />
     </div>
   );
 }
