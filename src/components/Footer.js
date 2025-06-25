@@ -21,6 +21,13 @@ const Footer = () => {
           Instagram
         </a>
         <a
+          href="https://github.com/gitcamy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
           href="https://www.behance.net/camerongordon7"
           target="_blank"
           rel="noopener noreferrer"

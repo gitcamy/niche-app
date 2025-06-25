@@ -5,25 +5,25 @@ const LinksList = () => {
   const items = [
     {
       name: "Eureka Investments",
-      description: "Branding, Web Design, and Development",
+      description: "Branding, UI/UX Design and Development",
       date: "2025",
       link: "https://www.investeureka.com",
     },
     {
       name: "InteliGente",
-      description: "Branding, Web Design, and Development",
+      description: "Branding, UI/UX Design and Development",
       date: "2024",
       link: "https://www.inteligente.io/",
     },
     {
       name: "Cosas Hermosas",
-      description: "Lead Creative Design, Web Development",
+      description: "Founder, Lead Creative Design, Web Development",
       date: "2022",
       link: "https://www.cosashermosas.shop",
     },
     {
       name: "Really Nice Photos",
-      description: "UI Design and Web Development",
+      description: "UX/UI Design and Web Development",
       date: "2023",
       link: "/photos-standalone",
     },
